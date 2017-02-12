@@ -1,0 +1,22 @@
+Agere\Reader\Model\PostsSource:
+  type: entity
+  table: posts_source
+  options:
+    comment: Status Progress
+  fields:
+    id:
+      id: true
+      type: integer
+      generator:
+        strategy: AUTO
+      options:
+        unsigned: true
+    guid:
+     type: string
+     nullable: false
+     unique: true
+     length: 255
+    source:
+     type: string
+     nullable: false
+     length: 255
